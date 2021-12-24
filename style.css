@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(./img/bg.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+main {
+    text-align: center;
+}
+
+.logo {
+    height: 9vh;
+    margin-top: 1vh;
+}
+
+.plane {
+    height: 25vh;
+    margin: 5vh 0;
+}
+
+.text-play {
+    line-height: 10vh;
+    font-size: 5vh;
+    color: #fff;
+    margin: 5vh 0;
+}
+
+.join {
+    font-size: 5vh;
+    font-weight: bold;
+    background-color: #ff7518;
+    color: #fff;
+    border: none;
+    border-radius: 1vh;
+    padding: 2.5vh 6vh;
+}
+
+.aviator {
+    height: 8vh;
+    width: auto;
+    vertical-align: middle;
+}
+
+.text-orange {
+    color: #ff7518;
+    text-decoration: none;
+}
+
+@media (orientation:landscape) and (max-width: 767px) {
+    .logo {
+        height: 12vh;
+    }
+    .plane {
+        margin: 0;
+    }
+    .text-play {
+        line-height: 12vh;
+        font-size: 6vh;
+        margin: 3vh 0;
+    } 
+    .join {
+        font-size: 5vh;
+        border-radius: 4vh;
+        padding: 2.5vh 10vh;
+    }
+    .aviator {
+        height: 14vh;
+    }
+}
+
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+    body {
+        background-image: url(./img/bg-mob.png);
+    }
+    .plane {
+        margin: 0;
+    }
+    .text-play {
+        margin: 0 0 20vh 0;
+    }
+}
